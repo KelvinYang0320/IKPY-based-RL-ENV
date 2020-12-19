@@ -17,7 +17,7 @@
 
 ### DDPG(pytorch)九點平面觸碰測試[6 hrs]
 * 因為每epoch均進行存取神經網路，時間較長
-![](https://i.imgur.com/vrWElW1.png =300x300)![](https://i.imgur.com/e3dcf3t.png =300x300)
+![](https://i.imgur.com/vrWElW1.png)![](https://i.imgur.com/e3dcf3t.png)
 
 ![](https://i.imgur.com/St2TVSh.gif)
 ![](https://i.imgur.com/wOfo6wx.png)
