@@ -11,9 +11,11 @@
 
 ### DDPG(pytorch)固定單點觸碰測試[30 mins]
 * 5000epoch後才存取神經網路
-|Score-Epoch|Demo|
-|---------|--------------|
+
+| Score-Epoch   | Demo          |
+| ------------- | ------------- |
 |![](https://github.com/KelvinYang0320/IKPY-based-RL-ENV/blob/main/img/onepoint.png)|![](https://github.com/KelvinYang0320/IKPY-based-RL-ENV/blob/main/img/onepoint.gif)|
+
 * 後續改成觸碰平面並加上手指前一軸之端點獎賞設計以維持盡可能平面移動，解決IKPY套件with orientation問題
 
 ### DDPG(pytorch)九點平面觸碰測試[6 hrs]
