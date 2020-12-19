@@ -25,7 +25,7 @@
 | 9 points      | IKPY inverse kinematics Demo          |
 | ------------- | ------------- |
 |![](https://github.com/KelvinYang0320/IKPY-based-RL-ENV/blob/main/img/ikpyshow9.png)|![](https://github.com/KelvinYang0320/IKPY-based-RL-ENV/blob/main/img/ikpyshow9_reach.png)|
-![](https://i.imgur.com/vrWElW1.png)![](https://i.imgur.com/e3dcf3t.png)
+
 
 #### Training Result
 | Score-Epoch     | Demo          |
