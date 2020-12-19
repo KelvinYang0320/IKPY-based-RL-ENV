@@ -11,6 +11,7 @@
 
 ### DDPG(pytorch)固定單點觸碰測試[30 mins]
 * 5000epoch後才存取神經網路
+#### Training Result
 
 | Score-Epoch   | Demo          |
 | ------------- | ------------- |
@@ -20,7 +21,14 @@
 
 ### DDPG(pytorch)九點平面觸碰測試[6 hrs]
 * 因為每epoch均進行存取神經網路，時間較長
+
+| 9 points      | IKPY inverse kinematics Demo          |
+| ------------- | ------------- |
+|![](https://github.com/KelvinYang0320/IKPY-based-RL-ENV/blob/main/img/ikpyshow9.png)|![](https://github.com/KelvinYang0320/IKPY-based-RL-ENV/blob/main/img/ikpyshow9_reach.png)|
 ![](https://i.imgur.com/vrWElW1.png)![](https://i.imgur.com/e3dcf3t.png)
 
-![](https://i.imgur.com/St2TVSh.gif)
-![](https://i.imgur.com/wOfo6wx.png)
+#### Training Result
+| Score-Epoch     | Demo          |
+| ------------- | ------------- |
+|![](https://github.com/KelvinYang0320/IKPY-based-RL-ENV/blob/main/img/ikpy9trend.png)|![](https://github.com/KelvinYang0320/IKPY-based-RL-ENV/blob/main/img/ikpy9.gif)|
+
