@@ -16,11 +16,6 @@
     * <code>-\-save_models_T</code>: how often would yoy like to save the NNs?
     * <code>-\-clear_output</code>:Would you like to see only a single line updating? 
     * The More Thing You Want to See, The More Time You spent
-:::info
-:bulb: **注意**: 選擇越頻繁顯示訓練資訊，則需要越多時間完成訓練。以上圖運行之訓練為例，對比上周每epoch顯示所有資訊之6小時訓練過程，本次僅花費4小時完成50000epoch之相同目標的訓練。
-<code>python3 RL-training.py --num_epoch 50000 --plot 1 --plot_T 1000 --info 1 --info_T 200  --save_models_T 500  --clear_output 0
-</code>
-:::
 * Class Diagram
   ![](https://i.imgur.com/fWlIP9S.png)
 * Eazy to Switch to Deepbots (with Webots)
