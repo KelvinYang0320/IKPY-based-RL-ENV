@@ -16,7 +16,7 @@
         * ![](https://i.imgur.com/JPVMtxD.png)
     * <code>-\-save_models_T</code>: how often would yoy like to save the NNs?
     * <code>-\-clear_output</code>:Would you like to see only a single line updating? 
-    * The More Thing You Want to See, The More Time You spent
+
 * Class Diagram
 
 ![](https://i.imgur.com/fWlIP9S.png)
