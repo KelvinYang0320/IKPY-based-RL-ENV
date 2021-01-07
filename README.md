@@ -20,7 +20,7 @@
   ![](https://i.imgur.com/fWlIP9S.png)
 * Eazy to Switch to Deepbots (with Webots)
 ![](https://i.imgur.com/lfAM1FN.png)
-* Idea (): 
+* Idea: 
     1. [IKPY-based-RL-ENV](https://github.com/KelvinYang0320/IKPY-based-RL-ENV): The Most Simplified Enviroment 
     2. Webots: robot simulator
     3. Real-world Franka Emika Panda
