@@ -1,5 +1,35 @@
 # IKPY-based-RL-ENV
-## IKPY-based RL訓練環境開發初版
+## RL Training Framework(IKPY-based)
+* Follow OpenAI RL Frame
+* How to Use it?
+    * ![](https://i.imgur.com/PlM7tzi.png)
+    * <code>-h</code>: Show the help message and exit
+    * <code>-\-plot</code>: visualize the training trend
+        * Keep saving the figure *scores_trend.png*
+        * ![](https://i.imgur.com/RuWPvWA.png)
+        * <code>-\-plot_T</code>: how often would you like to save the figure and the training record data?
+            * Plot the raw data with SMA
+                * ![](https://i.imgur.com/YItZ68V.png)
+    * <code>-\-info</code>: show the progress bar
+        * <code>-\-info_T</code>: how often would you like to update the bar?
+        * ![](https://i.imgur.com/JPVMtxD.png)
+    * <code>-\-save_models_T</code>: how often would yoy like to save the NNs?
+    * <code>-\-clear_output</code>:Would you like to see only a single line updating? 
+    * The More Thing You Want to See, The More Time You spent
+:::info
+:bulb: **注意**: 選擇越頻繁顯示訓練資訊，則需要越多時間完成訓練。以上圖運行之訓練為例，對比上周每epoch顯示所有資訊之6小時訓練過程，本次僅花費4小時完成50000epoch之相同目標的訓練。
+<code>python3 RL-training.py --num_epoch 50000 --plot 1 --plot_T 1000 --info 1 --info_T 200  --save_models_T 500  --clear_output 0
+</code>
+:::
+* Class Diagram
+  ![](https://i.imgur.com/fWlIP9S.png)
+* Eazy to Switch to Deepbots (with Webots)
+![](https://i.imgur.com/lfAM1FN.png)
+* Idea $1\rightarrow 2\rightarrow3$: 
+    1. [IKPY-based-RL-ENV](https://github.com/KelvinYang0320/IKPY-based-RL-ENV): The Most Simplified Enviroment 
+    2. Webots: robot simulator
+    3. Real-world Franka Emika Panda
+## IKPY-based RL訓練環境開發ipynb測試版
 * 開發動機：Webots同時運行約三個就會導致GPU超載而螢幕顯示當機
 * 優點：
     * 相較Webots以fast mode運行RL訓練約能提升4倍速度
