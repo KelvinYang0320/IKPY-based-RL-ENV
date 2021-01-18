@@ -4,7 +4,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 import torch.optim as optim
 import numpy as np
-import sys
+
 class OUActionNoise(object):
     def __init__(self, mu, sigma=0.15, theta=.2, dt=1e-2, x0=None):
         self.theta = theta
@@ -61,7 +61,7 @@ class ReplayBuffer(object):
 
 class CriticNetwork(nn.Module):
     def __init__(self, beta, input_dims, fc1_dims, fc2_dims, n_actions, name,
-                 chkpt_dir='tmp/ddpg'):
+                 chkpt_dir='tmp2/ddpg'):
         super(CriticNetwork, self).__init__()
         self.input_dims = input_dims
         self.fc1_dims = fc1_dims
@@ -112,20 +112,16 @@ class CriticNetwork(nn.Module):
         return state_action_value
 
     def save_checkpoint(self):
-        # sys.stdout.write(' [saving checkpoint]')
-        # print('... saving checkpoint ...')
+        print('... saving checkpoint ...')
         T.save(self.state_dict(), self.checkpoint_file)
-        # sys.stdout.flush()
 
     def load_checkpoint(self):
-        # sys.stdout.write(' [loading checkpoint]')
-        # print('... loading checkpoint ...')
+        print('... loading checkpoint ...')
         self.load_state_dict(T.load(self.checkpoint_file))
-        # sys.stdout.flush()
 
 class ActorNetwork(nn.Module):
     def __init__(self, alpha, input_dims, fc1_dims, fc2_dims, n_actions, name,
-                 chkpt_dir='tmp/ddpg'):
+                 chkpt_dir='tmp2/ddpg'):
         super(ActorNetwork, self).__init__()
         self.input_dims = input_dims
         self.fc1_dims = fc1_dims
@@ -174,16 +170,12 @@ class ActorNetwork(nn.Module):
         return x
 
     def save_checkpoint(self):
-        # sys.stdout.write(' [saving checkpoint]')
-        # print('... saving checkpoint ...')
+        print('... saving checkpoint ...')
         T.save(self.state_dict(), self.checkpoint_file)
-        # sys.stdout.flush()
 
     def load_checkpoint(self):
-        # sys.stdout.write(' [loading checkpoint]')
-        # print('... loading checkpoint ...')
+        print('... loading checkpoint ...')
         self.load_state_dict(T.load(self.checkpoint_file))
-        # sys.stdout.flush()
 
 class Agent(object):
     def __init__(self, alpha, beta, input_dims, tau, gamma=0.99,
